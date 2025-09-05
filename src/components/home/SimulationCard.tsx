@@ -21,7 +21,8 @@ function SimulationCard ({title, description, buttonText}: SimulationCardProps):
                     type="button" onClick={handleClick} 
                     className="
                         flex flex-row justify-center items-center 
-                        w-40 h-10 bg-amber-300 
+                        w-40 h-10
+                        bg-amber-300 
                         border-3 rounded-md
                         hover:bg-amber-700
                         hover:scale-110

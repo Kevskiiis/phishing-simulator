@@ -1,9 +1,12 @@
 import { JSX } from "react";
+
+// Components:
 import SimulationCard from "../components/home/SimulationCard";
+import InformationCard from "../components/home/InformationCard";
 
 function Home (): JSX.Element {
     return (
-        <div className="w-screen h-screen flex flex-col overflow-y-scroll bg-gray-900">
+        <div className="w-full h-full flex flex-col bg-gray-900">
             {/* Title */}
             <div className="w-full h-30 flex justify-center items-center relative top-0 font-extrabold text-6xl bg-amber-500">
                 <h1>Phishing Simulator</h1>
@@ -14,11 +17,12 @@ function Home (): JSX.Element {
                 <SimulationCard title={'Email Simulator'} description={'Email simulation description.'} buttonText={'Start Simulation'}></SimulationCard>
             </div>
             {/* About / Information */}
-            <div className="w-full h-80 flex flex-col bg-amber-200">
+            <div className="w-full h-fit flex flex-col pt-5 pl-5 pr-5 bg-amber-200">
                 {/* Why Phishing Simulator section */}
                 <div>
-                    <h1>What is the purpose of a Phishing simulator?</h1>
-                    <p></p>
+                    <InformationCard key={1} title="Why Phishing Simulator?" description="This is why."></InformationCard>
+                    <InformationCard key={1} title="Why Phishing Simulator?" description="This is why."></InformationCard>
+                    <InformationCard key={1} title="Why Phishing Simulator?" description="This is why."></InformationCard>
                 </div>
             </div>
         </div>
