@@ -8,7 +8,7 @@ interface InformationCardProps {
 function InformationCard ({title, description}: InformationCardProps): JSX.Element {
     return (
         // Container:
-        <div className="w-full h-fit mt-4 mb-4 bg-gray-900 border-4 border-amber-100 rounded-md">
+        <div className="w-11/12 h-fit mt-4 mb-4 bg-[#4a4a48] border-4 border-[#faf6e9] rounded-md">
             {/* Title */}
             <h1 
                 className="
@@ -16,23 +16,21 @@ function InformationCard ({title, description}: InformationCardProps): JSX.Eleme
                 pb-4
                 pr-3
                 pl-3
-                bg-red-500
-                font-extrabold
+                bg-[#faf6e9]
+                font-semibold
                 text-3xl
-                text-white
-                hover:scale-101
-                hover:border-2
-                hover:border-black
-                hover:shadow-2xs
-                transition-all
+                text-black
                 "
             >{title}</h1>
             {/* Description of title. */}
             <p 
                 className="
                 pt-5 pb-5 pl-10 pr-10 
+                font-medium
                 text-lg
-                text-white"
+                text-white
+                bg-[#4a4a48]
+                "
             >{description}</p>
         </div>
     )
