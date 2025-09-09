@@ -8,28 +8,37 @@ interface InformationCardProps {
 function InformationCard ({title, description}: InformationCardProps): JSX.Element {
     return (
         // Container:
-        <div className="w-11/12 h-fit mt-4 mb-4 bg-[#4a4a48] border-4 border-[#faf6e9] rounded-md">
+        <div className="flex flex-col justify-center items-center w-10/12 h-fit pb-6 border-4 border-[#e3dddd] rounded-2xl hover:scale-103 transition-all ">
             {/* Title */}
-            <h1 
+            <h2 
                 className="
+                flex
+                flex-row
+                justify-center
+                items-center
+                w-full
+                h-fit
                 pt-4
                 pb-4
                 pr-3
                 pl-3
-                bg-[#faf6e9]
                 font-semibold
-                text-3xl
+                text-4xl
                 text-black
                 "
-            >{title}</h1>
+            >{title}</h2>
             {/* Description of title. */}
             <p 
                 className="
+                flex
+                flex-row
+                w-full
+                h-fit
+                text-center
                 pt-5 pb-5 pl-10 pr-10 
                 font-medium
-                text-lg
-                text-white
-                bg-[#4a4a48]
+                text-xl
+                text-gray-500
                 "
             >{description}</p>
         </div>

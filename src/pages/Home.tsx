@@ -6,17 +6,21 @@ import Footer from '../components/layout/Footer';
 import SimulationCard from "../components/home/SimulationCard";
 import InformationCard from "../components/home/InformationCard";
 
+//SVG Background:
+import background from '../assets/bg-main.svg';
+
 // Decide on a better data structure.
 let contents: string[] = ['']
 
 function Home (): JSX.Element {
 
     return (
-        <div className="w-full h-full flex flex-col items-center">
-            {/* Title */}
+        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})]`}>
+            {/* NavBar */}
             <Header title="Phishing Simulator"/>
+
             {/* What is Phishing Info Card */}
-            <div className="flex justify-center items-center bg-[#4a4a48]">
+            <div className="flex flex-col w-10/12 h-fit justify-center items-center">
                 <InformationCard
                     key={1}
                     title="What is Phishing?"
@@ -25,12 +29,12 @@ function Home (): JSX.Element {
                 />            
             </div>
             {/* Main Content: Simulations Available */}
-            <div className="w-full h-fit flex flex-col items-center border-b-10 border-t-10 border-[#2b2b28] bg-[#ece8d9]">
-                <div className="w-120 h-20 flex justify-center items-center rounded-b-3xl bg-[#2b2b28]">
-                    <h1 className="font-extrabold font-mono text-3xl text-[#faf6e9]">Simulations Available</h1>
+            <div className="flex flex-col items-center w-full h-fit gap-5">
+                <div className="w-10/12 h-20 flex justify-center items-center rounded-4xl bg-[#2b2b28]">
+                    <h1 className="font-extrabold font-mono text-3xl gradient-text">Simulations Available</h1>
                 </div>
                 {/* Content/Cards */}
-                <ul className="w-full h-80 flex space-x-5 justify-center items-center pl-5 pr-5 ">
+                <ul className="flex flex-wrap justify-center items-center w-10/12 h-fit gap-5 pl-5 pr-5 pb-10 pt-10">
                     <SimulationCard
                         link="/email-phishing-instructions"
                         title={'Email Simulator'}
@@ -51,7 +55,7 @@ function Home (): JSX.Element {
                 </ul>
             </div>
             {/* About / Information */}
-            <div className="w-full h-fit flex flex-col items-center bg-[#4a4a48]">
+            <div className="w-10/12 h-fit flex flex-col justify-center items-center gap-12">
                 <InformationCard
                     key={2}
                     title="Why a Phishing Simulator?"
@@ -70,6 +74,7 @@ function Home (): JSX.Element {
                     description="The more you practice identifying phishing attempts, the safer you become. Our simulator gives you hands-on experience to boost your confidence."
                     />
             </div>
+            
             {/* Footer */}
             <Footer/>
         </div>

@@ -1,4 +1,5 @@
 import {JSX, ReactNode} from 'react';
+import {Link} from 'react-router'; 
 
 interface HeaderProps {
     title: string;
@@ -6,13 +7,14 @@ interface HeaderProps {
 
 function Header({title}: HeaderProps): JSX.Element {
     return (
-        <header className="w-full h-30 flex justify-around items-center relative top-0 bg-[#2b2b28]">
+        <header className="w-11/12 h-fit flex justify-around items-center mt-5 pt-4 pb-4 rounded-4xl relative gradient-background">
             {/* Left side: Title */}
-            <h1 className="font-extrabold font-mono text-6xl text-shadow-md text-[#faf6e9]">{title}</h1>
+            <h1 className="font-extrabold font-mono text-5xl text-shadow-md text-black">{title}</h1>
             {/* Right side: Buttons */}
             <div className='flex space-x-4'>
-                <button className='p-3 rounded-3xl bg-[#faf6e9] font-medium transition-all hover:bg-gray-300 hover:scale-105 active:scale-90'>Request a feature</button>
-                <button className='p-3 rounded-3xl bg-[#faf6e9] font-medium transition-all hover:bg-gray-300 hover:scale-105 active:scale-90'>Learn more</button>
+                <button className='p-2 w-35 rounded-3xl gradient-button font-medium transition-all hover:bg-gray-300 hover:scale-105 active:scale-90'>Login</button>
+                <button className='p-2 w-35 rounded-3xl gradient-button font-medium transition-all hover:bg-gray-300 hover:scale-105 active:scale-90'>Create Account</button>
+                <button className='p-2 w-35 rounded-3xl gradient-button font-medium transition-all hover:bg-gray-300 hover:scale-105 active:scale-90'>Learn more</button>
             </div>
         </header>
     )

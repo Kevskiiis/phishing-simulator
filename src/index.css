@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+.gradient-button {
+    @apply bg-gradient-to-br from-[#ffffff] to-[#eddfad];
+}
+
+.gradient-text {
+    @apply bg-gradient-to-br bg-clip-text text-transparent;
+    background-image: linear-gradient(to bottom right, #e3d98d, #f15252);
+}
+
+/* .gradient-card {
+    @apply bg-gradient-to-br from-[#f0deaa] to-[#e78181];
+} */
+
+.gradient-background {
+    @apply bg-gradient-to-br from-[#e3d98d] to-[#f15252];
+}
+
+.navbar {
+    @apply flex flex-row mt-5;
+}
+
+/* Home Page */
+
+.home-page-intro-content {
+
+}
