@@ -29,12 +29,12 @@ function Home (): JSX.Element {
                 />            
             </div>
             {/* Main Content: Simulations Available */}
-            <div className="flex flex-col items-center w-full h-fit gap-5">
-                <div className="w-10/12 h-20 flex justify-center items-center rounded-4xl bg-[#2b2b28]">
+            <div className="flex flex-col items-center w-10/12 h-fit gap-5">
+                <div className="w-full h-20 flex justify-center items-center rounded-4xl bg-[#2b2b28]">
                     <h1 className="font-extrabold font-mono text-3xl gradient-text">Simulations Available</h1>
                 </div>
                 {/* Content/Cards */}
-                <ul className="flex flex-wrap justify-center items-center w-10/12 h-fit gap-5 pl-5 pr-5 pb-10 pt-10">
+                <ul className="flex flex-wrap justify-center items-center w-full h-fit gap-5 pl-5 pr-5 pb-5 pt-5">
                     <SimulationCard
                         link="/email-phishing-instructions"
                         title={'Email Simulator'}
