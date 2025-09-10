@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, useState } from "react";
 
 // Components:
 import Header from '../components/layout/Header';
@@ -15,12 +15,12 @@ let contents: string[] = ['']
 function Home (): JSX.Element {
 
     return (
-        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})]`}>
+        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})] animate-[newPage_1.1s_ease-in-out_forwards]`}>
             {/* NavBar */}
             <Header title="Phishing Simulator"/>
 
             {/* What is Phishing Info Card */}
-            <div className="flex flex-col w-10/12 h-fit justify-center items-center">
+            <div className="flex flex-col w-10/12 h-fit justify-center items-center animate-[scaleIn_1.25s_ease-in-out_forwards]">
                 <InformationCard
                     key={1}
                     title="What is Phishing?"
