@@ -15,7 +15,7 @@ let contents: string[] = ['']
 function Home (): JSX.Element {
 
     return (
-        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})] animate-[newPage_1.1s_ease-in-out_forwards]`}>
+        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})]`}>
             {/* NavBar */}
             <Header title="Phishing Simulator"/>
 
