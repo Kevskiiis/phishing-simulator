@@ -33,8 +33,8 @@ If not installed, download it from the link above and follow the setup instructi
 Open your terminal and run:
 
 ```bash
-git clone <your-repo-link>
-cd keeper
+git clone https://github.com/Kevskiiis/phishing-simulator.git
+cd phishing-simulator
 ```
 
 > Replace `<your-repo-link>` with the actual GitHub link to this repo.
