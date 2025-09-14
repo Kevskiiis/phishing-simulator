@@ -7,7 +7,7 @@ import SimulationCard from "../components/home/SimulationCard";
 import InformationCard from "../components/home/InformationCard";
 
 //SVG Background:
-import background from '../assets/bg-main.svg';
+// import background from '../assets/bg-main.svg';
 
 // Decide on a better data structure.
 let contents: string[] = ['']
@@ -15,12 +15,12 @@ let contents: string[] = ['']
 function Home (): JSX.Element {
 
     return (
-        <div className={`w-full h-full flex flex-col items-center gap-12 bg-[url(${background})]`}>
+        <div className={`w-full h-full flex flex-col items-center gap-12`}>
             {/* NavBar */}
             <Header title="Phishing Simulator"/>
 
             {/* What is Phishing Info Card */}
-            <div className="flex flex-col w-10/12 h-fit justify-center items-center animate-[scaleIn_1.25s_ease-in-out_forwards]">
+            <div className="flex flex-col w-10/12 h-fit justify-center items-center">
                 <InformationCard
                     key={1}
                     title="What is Phishing?"

@@ -2,8 +2,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Pages:
 import Home from './pages/Home.tsx';
-import InstructionsMail from './pages/email_simulation/InstructionsMail.tsx';
-import InstructionsMessage from './pages/messages_simulation/InstructionsMessage.tsx';
+import InstructionsMail from './pages/emailSim/InstructionsMail.tsx';
+import InstructionsMessage from './pages/messagesSim/InstructionsMessage.tsx';
 
 function App() {
   return (
