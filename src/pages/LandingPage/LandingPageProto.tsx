@@ -1,29 +1,31 @@
 import { JSX, useState } from "react";
 
 // Components:
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer'; 
-import SimulationCard from "../components/home/SimulationCard";
-import InformationCard from "../components/home/InformationCard";
+import Header from '../../components/Header';
+import Footer from '../../components/Footer'; 
+import SimulationCard from "./components/SimulationCard";
+import InformationCard from "./components/InformationCard";
 
 //SVG Background:
 // import background from '../assets/bg-main.svg';
 
 // Decide on a better data structure.
-let contents: string[] = ['']
+let content = {
+
+}
 
 function Home (): JSX.Element {
 
     return (
-        <div className={`w-full h-full flex flex-col items-center gap-12`}>
+        <div className={`w-full h-full flex flex-col items-center gap-12 bg-gradient-to-b from-[#999999] to-[#FFFFFF];`}>
             {/* NavBar */}
-            <Header title="Phishing Simulator"/>
+            <Header title="FORT"/>
 
             {/* What is Phishing Info Card */}
             <div className="flex flex-col w-10/12 h-fit justify-center items-center">
                 <InformationCard
                     key={1}
-                    title="What is Phishing?"
+                    title="Make every click a safe one"
                     description="Phishing is when someone tries to trick you into giving away personal information—like passwords, credit card numbers, or login details—by pretending to be someone you trust.
                      These scams often come through emails, texts, or fake websites that look real. The goal is to steal your data or money without you realizing it."
                 />            
