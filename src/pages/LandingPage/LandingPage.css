@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .page-container {
-    @apply flex flex-col h-screen gap-3 bg-gradient-to-b from-[#191919] to-[#464646];
+    @apply flex flex-col h-full;
 }
 
 

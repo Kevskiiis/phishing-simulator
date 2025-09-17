@@ -1,20 +1,24 @@
-import './App.css'
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// Pages:
-import Home from './pages/LandingPage/LandingPageProto.tsx';
-import LandingPage from './pages/LandingPage/LandingPage.tsx';
-import InstructionsMail from './pages/emailSim/InstructionsMail.tsx';
-import InstructionsMessage from './pages/messagesSim/InstructionsMessage.tsx';
 
+// Page Layouts:
+import LandingPageLayout from './layouts/LandingPageLayout.tsx';
+
+// Pages:
+import LandingPage from './pages/LandingPage/LandingPage.tsx';
+import AuthPage from './pages/AuthPage/AuthPage.tsx';
+
+// Routes:
 function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<LandingPage/>}/>
-            <Route path='/email-phishing-instructions' element={<InstructionsMail/>}/>
-            <Route path='/message-phishing-instructions' element={<InstructionsMessage/>}/>
+            <Route path='/' element={<LandingPageLayout/>}>
+                <Route  index element={<LandingPage/>}/>
+                <Route path='auth' element={<AuthPage/>}/>
+            </Route>
         </Routes>
     </BrowserRouter>
   )
 }
-export default App
+export default App;

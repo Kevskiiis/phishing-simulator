@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.page-container {
+    @apply flex flex-col justify-center items-center h-screen gap-3 bg-gradient-to-b from-[#191919] to-[#464646];
+}
+
+.form-container {
+    @apply flex flex-col w-90 h-100 bg-amber-100;
+}

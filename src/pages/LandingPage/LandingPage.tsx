@@ -1,39 +1,16 @@
 // Dependencies:
 import { JSX } from "react";
 import { Link } from "react-router-dom";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-
-// Components:
-import NavigationBar from '../../components/NavigationBar';
 
 // Style:
 import './LandingPage.css';
 
-// 3D Loader:
-const loader = new GLTFLoader();
 
 function LandingPage ():JSX.Element {
 
-    // Load 3D image:
-    // loader.load('/models/laptop.glb', (
-    //     gltf: GLTF) => {
-
-    //     },
-    //     (xhr: ProgressEvent<EventTarget>) => {
-    //         console.log(`Loading progress: ${ (xhr.loaded / xhr.total * 100).toFixed(2) }%`);
-    //     },
-    //     (error: ErrorEvent) => {
-    //         console.log(`Error occured loading file: ${error}`);
-    //     }
-    // )
-
     return (
         <div className="page-container">
-            {/* Navigation Bar Component */}
-            <NavigationBar/>
-
-            {/* Body */}
+            {/* Main Body */}
             <div className="body-container">
                 {/* Column 1: Unique catchy line w/ button*/}
                 <div className="flex flex-col items-center gap-10 w-full h-full">
@@ -49,7 +26,7 @@ function LandingPage ():JSX.Element {
                 <div>
 
                 </div>
-            </div>
+            </div>            
         </div>
     )
 }
