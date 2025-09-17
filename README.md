@@ -68,12 +68,12 @@ Each simulator will have its own realistic environment to train in.
 
 ## App Screenshots & User Experience
 
-### 1. Home Page
+### 1. Landing Page
 
 - Shows two phishing simulator options (UI in progress).
 - Offers a simple, clean layout for beginners.
 
-![Home Page Screenshot](src/assets/projectImages/PhishingSim_HomeUI.jpeg)
+![Home Page Screenshot](src/assets/projectImages/LandingPage.jpeg)
 
 ---
 
